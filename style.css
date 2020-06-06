@@ -1,0 +1,263 @@
+     body
+      {
+         background-image: url("background.jpg");
+      }
+      [title="Mobile Menu"]
+      {
+         display:inline-block;
+         position:absolute;
+         top:1em;
+         border:2px outset #cce6ff; 
+         margin:0;
+         right:1em;
+         background-image: url("background.jpg");
+         font-weight:bold;
+      }
+      [title="Mobile Menu"]:hover
+      {
+         display:none;  
+
+      }
+      [title="Mobile Menu"]:hover+.toolbar
+      {
+         display:block;
+      }
+      header
+      {
+         width:80%;
+         margin:4em auto;
+         font-size:3.5vw;
+      }
+      .main
+      {
+        background-color:white;
+        height:auto;
+        margin:4em auto 0;
+        padding-bottom:0;
+      }
+      .mainimage
+      {
+         height:1300px;
+         width:75%;
+      }
+      .imagehead
+      {
+         padding-top:1.15em;
+         text-shadow:3px 3px 5px #333300;
+      }
+      .capital
+      {  
+         text-transform:uppercase;
+         font-weight:bold;
+      }
+      .scolor
+      {
+         color:#cce6ff;
+      }
+      .centertext
+      {
+         text-align:center;
+      }
+      .para
+      {
+        text-align:left;
+        width:75%;
+        margin:3em auto;
+ 
+      }
+      .bgliteblue
+      {
+        background-color:#cce6ff;
+      }
+      .width80
+      {
+        width:80%;
+      }
+      .about
+      {
+        margin:0 auto;
+        padding:0;
+        position :relative;
+        top:-3em;
+      }
+      i
+      { 
+        color:black;
+        padding:.6em;
+      }
+      .nobulet
+      {
+        list-style-type:none;
+      }
+      .toolbar
+      {
+         margin:0;
+         padding:2em 0 0 0;
+         display:none;        
+      }
+      .rightfix
+      {
+        position:fixed;
+        right:0;
+        top:0;
+      }
+      .fullheight
+      {
+        height:100%;
+      }
+      li>a
+      {
+         display:inline-block;  
+         text-decoration:none;
+         overflow:auto;
+         color:black;
+         padding:.6em;
+         border-bottom:2px outset #47476b; 
+         width:100%;
+      }
+      li a:hover
+      {
+         background-color:#000080;
+         color:white;
+      }
+       .social-media
+      {
+          color:white;
+      }
+      .big
+      {
+          font-size:8vw;
+      }
+      /*tablet*/
+      @media only screen and (min-width:530px)
+      {  
+         [title="Mobile Menu"]
+         {
+           display:none;
+         } 
+         .toolbar
+         {
+            position:relative;
+            top:40vw;
+            display:inline-block;
+            overflow:auto;
+            background-image: url("background.jpg");
+            width:100%;
+            height:auto;
+            margin:0;
+            padding:0;
+         }
+        li>a
+         {
+            width:17%;
+            float:left;
+            color:#cce6ff;
+            margin:0;
+            padding:3px;
+            border:2px outset #47476b;
+            text-align:center;
+            font-size:2.1vw;
+            border:2px ridge #cce6ff;
+         }
+         li>a:hover
+         {
+            background-color:#cce6ff;
+            color:#000080;
+         }
+         li[class="social-media"]
+         {
+            display:inline;
+            width:3%;
+            margin:0;
+            paddin:0;
+         }
+         [class~="fas"]
+         {
+            color:#cce6ff;
+         }
+         i[class*="close"]
+         {
+            display:none;
+         }
+         span [class~="fab"]
+         {
+            padding:.6em 3px;
+            float:right;
+            color:#cce6ff;
+         }
+         header
+         {
+             position:relative;
+             top:-5em;
+             magin:0 auto;
+             font-size:3vw;
+         }
+         .big
+         {
+            font-size:8vw;
+         }
+         .main
+         {
+             margin:8em auto 0;
+         }
+      }
+      /*big screen*/
+      @media only screen and (min-width:800px)
+      {
+         body
+         {
+            width:63%;
+            margin:0 auto;
+         }
+         [title="Mobile Menu"]
+         {
+           display:none;
+         } 
+         .toolbar
+         {
+           position:fixed;
+           right:0;
+           top:0;
+           height:100%;
+           margin:0;
+           padding:2em 0 0 0;
+           display:block;
+           width:16.66%;
+           border:2px ridge #cce6ff;        
+         }         
+         li>a
+         { 
+           display:inline-block;  
+           text-decoration:none;
+           overflow:visible;
+           padding:3px;
+           font-size:1.8vw;
+           border-bottom:2px outset #47476b; 
+           width:100%;
+         }  
+         header
+         {
+           top:-3vw;
+         }
+         .main
+         {
+           margin:3em auto 0;
+         }
+         .about
+         {
+           width:18%;
+           position:fixed;
+           left:0;
+           top:0;
+           height:100%;
+           background-image: url("background.jpg");
+           color:#cce6ff;
+           border:2px ridge #cce6ff;
+           overflow:auto;
+         }
+         [class~="fab"]
+         {
+           color:#cce6ff;
+           padding:5px;
+         }
+      }
